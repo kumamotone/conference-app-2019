@@ -112,8 +112,7 @@ class BottomSheetFavoriteSessionsFragment : DaggerFragment() {
                         excludeChildren(binding.sessionsRecycler, true)
                     })
                 val isCollapsed = newState == BottomSheetBehavior.STATE_COLLAPSED
-                binding.sessionsBottomSheetShowFilterButton.isVisible = !isCollapsed
-                binding.sessionsBottomSheetHideFilterButton.isVisible = isCollapsed
+                binding.isCollapsed = isCollapsed
             }
         }
     }
